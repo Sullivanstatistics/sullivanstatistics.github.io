@@ -4,7 +4,7 @@
     
     
     <url>
-      <loc>/project/r/</loc>
+      <loc>http://www.statseducation.com/project/r/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     </url>
     
@@ -12,7 +12,7 @@
     
     
     <url>
-      <loc>/about/</loc>
+      <loc>http://www.statseducation.com/about/</loc>
     </url>
     
   
@@ -22,16 +22,7 @@
     
     
     <url>
-      <loc>/project/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>/tags/r/</loc>
+      <loc>http://www.statseducation.com/project/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -40,7 +31,16 @@
     
     
     <url>
-      <loc>/</loc>
+      <loc>http://www.statseducation.com/tags/r/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>http://www.statseducation.com/</loc>
       <lastmod>2016-04-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -49,7 +49,7 @@
     
     
     <url>
-      <loc>/tags/</loc>
+      <loc>http://www.statseducation.com/tags/</loc>
       <priority>0</priority>
     </url>
     

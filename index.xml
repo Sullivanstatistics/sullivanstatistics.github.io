@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stats Education on Stats Education</title>
-    <link>/index.xml</link>
+    <link>http://www.statseducation.com/index.xml</link>
     <description>Recent content in Stats Education on Stats Education</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Introduction to R</title>
-      <link>/project/r/</link>
+      <link>http://www.statseducation.com/project/r/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/project/r/</guid>
+      <guid>http://www.statseducation.com/project/r/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
@@ -30,12 +30,12 @@
     
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>http://www.statseducation.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>http://www.statseducation.com/about/</guid>
       <description>&lt;p&gt;&lt;center&gt;
-&lt;img src=&#34;/img/Sullivan_4.jpg&#34; alt=&#34;Adam&#34; align=&#34;right&#34; style=&#34;width: 60%; height: 60%; margin:8px&#34;&gt;
+&lt;img src=&#34;http://www.statseducation.com/img/Sullivan_4.jpg&#34; alt=&#34;Adam&#34; align=&#34;right&#34; style=&#34;width: 60%; height: 60%; margin:8px&#34;&gt;
 &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;Welcome to Stats Education! My name is Adam Sullivan and I am an Assistant Professor of Biostatistics programs at &lt;a href=&#34;https://www.brown.edu/academics/public-health/biostatistics/&#34; target=&#34;_blank&#34;&gt;Brown University&lt;/a&gt;.&lt;/p&gt;
@@ -45,7 +45,7 @@
 &lt;p&gt;I have a passion for teaching and mentoring students. This passion started when I was an undergraduate student and started tutoring and grading homework. I now have been involved in education for over 16 years and have been teaching in some capacity for 15 of those years.&lt;/p&gt;
 
 &lt;p&gt;&lt;center&gt;
-&lt;img src=&#34;/img/bandOne.png&#34; alt=&#34;Adam&#34; align=&#34;left&#34; style=&#34;width: 60%; height: 60%; margin:8px&#34;&gt;
+&lt;img src=&#34;http://www.statseducation.com/img/bandOne.png&#34; alt=&#34;Adam&#34; align=&#34;left&#34; style=&#34;width: 60%; height: 60%; margin:8px&#34;&gt;
 &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;I earned a BA in Mathematics and Secondary Education from &lt;a href=&#34;www.houghton.edu&#34; target=&#34;_blank&#34;&gt;Houghton College&lt;/a&gt; in 2003. I taught high school math in New York for 3.5 years following this before earning a MS in Mathematics from &lt;a href=&#34;www.sdstate.edu&#34; target=&#34;_blank&#34;&gt;South Dakota State University&lt;/a&gt;. I finished up my academic years at &lt;a href=&#34;www.harvard.edu&#34; target=&#34;_blank&#34;&gt;Harvard University&lt;/a&gt; where I earned a PhD in Biostatistics in 2015. During this time I have taught high school math from Algebra to AP Calculus, College Algebra, Undergraduate Introductory Statistics and my current courses at Brown University.&lt;/p&gt;
