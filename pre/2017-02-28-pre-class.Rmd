@@ -1,0 +1,108 @@
+---
+title: "February 28, 2017 - Pre-Class"
+author: "Adam J Sullivan"
+date: 2015-07-23T21:13:14-05:00
+categories: ["R", "Pre-Class"]
+tags: ["R Markdown", "R", "Github"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+
+# Github Pages Assignment
+
+
+You should have been working in Github by this point. What that means if you hopefully have a Github account. If you do not please go to [Github](https://github.com/join). Now follow the instructions below in order to start your pre-class assignment. 
+
+
+## What is a Github Page?
+
+[Githubpages](https://pages.github.com/) are explained in the video below:
+
+
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/2MsN8gpT6jY" frameborder="0" allowfullscreen></iframe>
+
+
+You will be building this github page so please do the following:
+
+
+1. Head over to [GitHub](www.github.com) and create a new repository named *username*.github.io, where *username* is your username (or organization name) on GitHub.
+2. Do not Clone this repository as instructed on github. Continue on to the next step first.
+
+
+## Enter Blogdown
+
+There are many ways to build pages on github, the primary one has been to use [jekyll](https://help.github.com/articles/about-github-pages-and-jekyll/). One issue with this is that jekyll only accepts markdown files. In class we have been seeing how amazing it can be to use [Rmarkdown](http://rmarkdown.rstudio.com) documents to include our R code, graphs and analysis. 
+
+`Blogdown` is an R package that creates blog style sites with a new static website called [Hugo](https://gohugo.io/). On top of that [blogdown](https://github.com/rstudio/blogdown) is a way to incorporate RMarkdown documents into your website. Through this you can actually display your R code and projects. Then like any other blog site you can discuss your favorite things and even code analysis which would allow others to see your coding abilities and interests. 
+
+
+We need to get started with blogdown now:
+
+1. Install Blogdown:
+
+```{r,eval=FALSE}
+install.packages("devtools")
+devtools::install_github('rstudio/blogdown')
+```
+
+2. Start a new project.
+  - In the right hand corner of your screen start a new project in an empty directory. 
+
+3.  Once you have this new project run the following code:
+
+```{r, eval=FALSE}
+library(blogdown)
+install_hugo()
+new_site()
+```
+
+4. Now you can see what your site looks like initially:
+
+```{r, eval=FALSE}
+serve_site()
+```
+
+5. Proceed to your next task of setting this project up. 
+
+
+
+
+## Setting Up Your Page
+
+
+You now should have a very basic website. The next goal would be to install some themes and actually create some content. In order to do that I have set up an example site that you can see, [here](https://www.sullivanstatistics.com/). There are quite a few things blank but I wanted to display the capabilities for you. Now here is how you can get a similar page:
+
+
+1. Go into git and clone this repository on your computer:
+```
+git clone https://github.com/Sullivanstatistics/GitHubPage.git
+```
+2. Now open up the folder:
+```
+- GitHubPage
+    -themes
+        hugo-academic
+```
+Now copy this `hugo-academic`  folder to the themes folder in your project. 
+
+3. Go back to the `GitHubPage` main folder. Copy `config.toml` over to your main page and replace your old `config.toml`.
+4. Now open up the folder:
+```
+- GitHubPage
+    -content
+```
+Copy the `home` folder over to your contents. 
+5. You should be able to see the page I created now, if not run `serve_site()` to see. 
+6. Open up `config.toml` and replace with your information. 
+7. Go into the `/project/content/home` folder and go through all the files in there replacing your information. 
+
+
+
+## In Class
+
+- We will get your site live when we start class. Comment below when you are finished with all of these steps. 
+

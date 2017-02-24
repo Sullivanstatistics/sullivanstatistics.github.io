@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Stats Education</title>
+    <link>/post/index.xml</link>
+    <description>Recent content in Posts on Stats Education</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Stats Education</copyright>
+    <lastBuildDate>Sun, 23 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Syllabus</title>
+      <link>/post/syllabus/</link>
+      <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/syllabus/</guid>
+      <description>&lt;!-- BLOGDOWN-HEAD --&gt;
+
+
+
+&lt;!-- /BLOGDOWN-HEAD --&gt;
+
+&lt;!-- BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;div id=&#34;course-description&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Course Description&lt;/h1&gt;
+&lt;p&gt;Statistical computing is an essential part of analysis. Statisticians need not only be able to run existing computer software but understand how that software functions. Students will learn fundamental concepts - Data Management, Data types, Data cleaning and manipulation, databases, graphics, functions, loops, simulation and Markov Chain Monte Carlo through working with various statistical analysis. Students will learn to write code in an organized fashion with comments. This course will use a variety of web-based material from:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;www.statseducation.com&#34; class=&#34;uri&#34;&gt;www.statseducation.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;rstudio.sullivanstatistics.com&#34; class=&#34;uri&#34;&gt;rstudio.sullivanstatistics.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Github&#34;&gt;https://www.github.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;course-format&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Course Format&lt;/h1&gt;
+&lt;p&gt;This course will be taught in a “flipped” format. Students will watch a series of videos and work through some simple coding examples before coming to class. The sequence of these will be displayed on the course website as well as a calendar for which videos need to be watched prior to attending class.&lt;/p&gt;
+&lt;p&gt;The classroom format will focus on labs and projects. You will be involved with computing and coding on a regular basis. Labs will form into projects which you will finish outside of class and turn in for grading.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;flipped-format-and-references&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Flipped Format and References&lt;/h1&gt;
+&lt;p&gt;We need to take some time to discuss what it means to have a flipped format class. In this style of formatting the note taking portion of the course will be done via videos. Think of these as video textbooks in which you gather the basic details before practicing the material.&lt;/p&gt;
+&lt;p&gt;In the traditional format this course would have the instructor teaching 160 minutes a week with some hands on lab activities but most coding work done outside of class. In the flipped format you will have access to these lectures as your work prior to class. You then will have 180 minutes of hands on coding projects, code sharing and time with the instructor.&lt;/p&gt;
+&lt;p&gt;This course will utilize a wealth of materials from many different resources aside from the textbooks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The majority of R videos will be hosted by  and created by the instructor.&lt;/li&gt;
+&lt;li&gt;Some notes have been adapted from:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; Shalizi, C. R. and A. C. Thomas (2014). . Online Course Site. .&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shiny is a product of R Studio and will be presented by RStudio with example created by the last 2 classes PHP 2560 class and the instructor.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;prerequisites&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Prerequisites&lt;/h1&gt;
+&lt;p&gt;Students should have courses in probability and statistical inference at the level of PHP 2510.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;recommended-textbooks&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Recommended Textbooks&lt;/h1&gt;
+&lt;p&gt; Matloff, Norman (2011). . No Starch Press. .&lt;/p&gt;
+&lt;p&gt; Rizzo, Maria L. (2007). . Chapman and Hall/ CRC. .&lt;/p&gt;
+&lt;p&gt; Maillardet, R, Jones, O; and Robinson, A (2011). . .&lt;/p&gt;
+&lt;p&gt; Teetor, Paul (2011). . O’Reilly Media, Inc. .&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;course-objectives&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Course Objectives&lt;/h1&gt;
+&lt;p&gt;After the successful completion of this course, you will understand and be able to implement the fundamental principles of statistical computing in R. In particular these include the following capabilities:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;item Obtain and work with Data.&lt;/li&gt;
+&lt;li&gt;Clean and Transform data into usable dataframes.&lt;/li&gt;
+&lt;li&gt;Create Graphics.&lt;/li&gt;
+&lt;li&gt;Understand the writing and use of functions.&lt;/li&gt;
+&lt;li&gt;Working with larger dataframes efficiently.&lt;/li&gt;
+&lt;li&gt;Perform Statistical Optimizations&lt;/li&gt;
+&lt;li&gt;Code and run an MCMC.&lt;/li&gt;
+&lt;li&gt;Data visualization.&lt;/li&gt;
+&lt;li&gt;Relational Databases&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;overall-course-expectations&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Overall Course Expectations&lt;/h1&gt;
+&lt;p&gt;Students in this course will be expected to do the following:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Attend all lectures and actively participate in in class sessions, for every class missed there will be a 5% reduction in overall grade.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete all assigned flipped material &lt;em&gt;prior&lt;/em&gt; to coming to class and be prepared to work on in class lab.&lt;/li&gt;
+&lt;li&gt;Complete and turn in all assignments on time. All assignments will be graded on ability of code to work, quality of coding and quality of comments on code.&lt;/li&gt;
+&lt;li&gt;Demonstrate an understanding on material on all projects.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Respect each other, each others questions and each others discussion.&lt;/li&gt;
+&lt;li&gt;Peer review other students code.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;evaluation&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Evaluation&lt;/h1&gt;
+&lt;p&gt;Students will be evaluated based on:&lt;/p&gt;
+&lt;table style=&#34;width:78%;&#34;&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;31%&#34; /&gt;
+&lt;col width=&#34;45%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;Grade Category&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Percentage&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Participation&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;15%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Pre-Class Assignments&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;20%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;In-Class Projects&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;20%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;R Package&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;15%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;Shiny App&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;30%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div id=&#34;evaluation-category-details&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Evaluation Category Details&lt;/h2&gt;
+&lt;div id=&#34;participation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Participation&lt;/h3&gt;
+&lt;p&gt;Participation will be calculated by the successful completion of videos and practice coding done prior to class as well as being present and engaged during the in class portion.&lt;/p&gt;
+&lt;p&gt;With the class meeting once a week it is crucial that all students attend. Any student who needs to miss a class must inform the instructor by 9 am the morning of the class. Unexcused absences will result in a 5% reduction in overall course grade.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;pre-class-assignments&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Pre-Class Assignments&lt;/h3&gt;
+&lt;p&gt;At the end of the videos each week a preview of the in class lab will need to be completed. This will ensure that all students are prepared to work on the material in the lab. Once this assignment is turned in, each student will be required to peer review code of a number of other students. Code will be graded and commented on based on criteria given out in class. Each students grade will be a combination of there own work as well as their peer reviewing of other students code.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;in-class-project&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;In-Class Project&lt;/h3&gt;
+&lt;p&gt;Projects will be a culmination of in class labs with some extra parameters associated with them. Most of the work on Projects will be done in groups&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-package&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;R Package&lt;/h3&gt;
+&lt;p&gt;Another useful skill with R is to take methods, data or other user created tools and turn them into a package. Students will work in groups to create an R Package as directed by the instructor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;shiny-app&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Shiny App&lt;/h3&gt;
+&lt;p&gt;An important part of statistics is the visualization and representation of data. Students will be expected to code and build their own Shiny Apps.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;semester-hours&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Semester Hours&lt;/h1&gt;
+&lt;p&gt;Over the course of the semester students will spend at least the amounts of time shown below:&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div id=&#34;class-schedule&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Class Schedule&lt;/h1&gt;
+&lt;p&gt;Important: Flipped material and readings are subject to change, contingent on mitigating circumstances and the progress we make as a class.&lt;/p&gt;
+&lt;div id=&#34;week-01-0130---0203-syllabus-day-introduction-to-flipped-learning.&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Week 01, 01/30 - 02/03: Syllabus Day / Introduction to Flipped Learning.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;First Day of Class&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Go over syllabus&lt;/li&gt;
+&lt;li&gt;Learn about flipped course.&lt;/li&gt;
+&lt;li&gt;Learn Use of Server.&lt;/li&gt;
+&lt;li&gt;Learn Basics of R and RMarkdown&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;week-02-0206---0210-r-basics-and-data-types-strings-and-regular-expressions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Week 02, 02/06 - 02/10: R Basics and Data Types / Strings and Regular Expressions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Vectors, Matrices, Arrays, Lists and Dataframes.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Required Reading&lt;/em&gt;:
+&lt;ul&gt;
+&lt;li&gt;Matloff Chap 1-5&lt;/li&gt;
+&lt;li&gt;Jones Chap 1-2&lt;/li&gt;
+&lt;li&gt;Teetor Chap 7&lt;/li&gt;
+&lt;li&gt;Rizzo Chap 1&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Strings and Regular Expressions&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Required Reading&lt;/em&gt;:
+&lt;ul&gt;
+&lt;li&gt;Matloff Chap 11&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;week-03-0213---0217-controlling-the-flow&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Week 03, 02/13 - 02/17: Controlling the Flow&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Basics of Logic&lt;/li&gt;
+&lt;li&gt;Loops and other Controls.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Required Reading&lt;/em&gt;:
+&lt;ul&gt;
+&lt;li&gt;Matloff Chap 7&lt;/li&gt;
+&lt;li&gt;Jones Chap 5&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;week-04-0220---0224-github&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Week 04, 02/20 - 02/24: Github&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Basics of Github.&lt;/li&gt;
+&lt;li&gt;Using Git to track and follow code.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Required Reading&lt;/em&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://happygitwithr.com/&#34;&gt;Happy Git with R&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;week-05-0227---0303-functions-in-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Week 05, 02/27 - 03/03: Functions in R&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Writing and Debugging Functions in R&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Required Reading&lt;/em&gt;:
+&lt;ul&gt;
+&lt;li&gt;Matloff Chap 12-14&lt;/li&gt;
+&lt;li&gt;Rizzo Chap 4&lt;/li&gt;
+&lt;li&gt;Jones Chap 7-9&lt;/li&gt;
+&lt;li&gt;Teetor Chap 13&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;week-06-0306---0310-simulation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Week 06, 03/06 - 03/10: Simulation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Basics of Simulation&lt;/li&gt;
+&lt;li&gt;Simulating Distributions and MCMC.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Required Reading&lt;/em&gt;:
+&lt;ul&gt;
+&lt;li&gt;Matloff Chap 8&lt;/li&gt;
+&lt;li&gt;Rizzo Chap 3&lt;/li&gt;
+&lt;li&gt;Jones Chap 20&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;week-07-0313---0317-sql&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Week 07, 03/13 - 03/17: SQL&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic SQL Commands.&lt;/li&gt;
+&lt;li&gt;Accessing MySQL on a server.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Required Readings&lt;/em&gt;:
+&lt;ul&gt;
+&lt;li&gt;TBD&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;week-08-0320---0324-working-with-dplyr-and-tidyr&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Week 08, 03/20 - 03/24: Working with Dplyr and Tidyr&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Cleaning Data with Dplyr and Tidyr.&lt;/li&gt;
+&lt;li&gt;Using Dplyr on MySql databases.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Required Readings&lt;/em&gt;:
+&lt;ul&gt;
+&lt;li&gt;TBD&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;week-09-0327---0331-graphics-in-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Week 09, 03/27 - 03/31: Graphics in R&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ggplot2&lt;/code&gt; in R&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Required Readings&lt;/em&gt;:
+&lt;ul&gt;
+&lt;li&gt;TBD&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;week-10-0403---0407-spring-break&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Week 10, 04/03 - 04/07: Spring Break&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;No Classes - Spring Break&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;week-11-0410---0414-package-building-in-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Week 11, 04/10 - 04/14: Package Building in R&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Creating packages in R&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Required Readings&lt;/em&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://r-pkgs.had.co.nz/&#34;&gt;R Packages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;week-12-0417---0421-package-building-in-r-continued&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Week 12, 04/17 - 04/21: Package Building in R Continued&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Creating packages in R&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Required Readings&lt;/em&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://r-pkgs.had.co.nz/&#34;&gt;R Packages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;week-13-0424---0428-shiny-apps&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Week 13, 04/24 - 04/28: Shiny Apps&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Creating packages in R&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Required Readings&lt;/em&gt;:
+&lt;ul&gt;
+&lt;li&gt;TBD&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;week-14-0501---0505-shiny-apps-continued&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Week 14, 05/01 - 05/05: Shiny Apps Continued&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Creating packages in R&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Required Readings&lt;/em&gt;:
+&lt;ul&gt;
+&lt;li&gt;TBD&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;week-15-0508---0512-shiny-apps-continued&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Week 15, 05/08 - 05/12: Shiny Apps Continued&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Creating packages in R&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Required Readings&lt;/em&gt;:
+&lt;ul&gt;
+&lt;li&gt;TBD&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;brown-undergraduate-competencies&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Brown Undergraduate Competencies&lt;/h1&gt;
+&lt;div id=&#34;primary-competencies&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Primary Competencies&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Be familiar with high speed and high throughput computing.&lt;/li&gt;
+&lt;li&gt;Apply Computationally intensive statistical methods (e.g., iterative methods, optimization, resampling, and simulation/Monte Carlo methods)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;refresher-competencies&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Refresher Competencies&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Be able to manipulate data (possibly “big”) using software in a well-documented and reproducible way.&lt;/li&gt;
+&lt;li&gt;Apply basic programming concepts (e.g., breaking a problem into modular pieces, algorithmic thinking, structured programming, debugging, and efficiency)&lt;/li&gt;
+&lt;li&gt;Be able to use of one or more professional statistical software environment&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;brown-scmam-competencies&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Brown ScM/AM Competencies&lt;/h1&gt;
+&lt;div id=&#34;primary-competencies-1&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Primary Competencies&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Identify and implement statistical techniques and models for analysis of data.&lt;/li&gt;
+&lt;li&gt;Attain proficiency in management, documentation of study data for use in practical statistical analysis.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;refresher-competencies-1&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Refresher Competencies&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Acquire knowledge and skills in research methodologies to collaborate with substantive investigators&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Apply programming skills to analyze data and develop simulation studies&lt;/li&gt;
+&lt;li&gt;Develop proficiency in making oral, written and poster presentations of work to statistical and non-statistical colleagues&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;brown-phd-competencies&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Brown PhD Competencies&lt;/h1&gt;
+&lt;div id=&#34;refreshed-competencies&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Refreshed Competencies&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Identify and implement advanced statistical models for the purposes of estimation, comparison, prediction, and adjustment in non-standard settings.&lt;/li&gt;
+&lt;li&gt;Apply programming skills to analyze data and develop simulation studies.&lt;/li&gt;
+&lt;li&gt;Develop proficiency in making oral, written and poster presentations of work to statistical and non-statistical colleagues&lt;/li&gt;
+&lt;li&gt;Generate original computer code for new statistical techniques&lt;/li&gt;
+&lt;li&gt;Determine the statistical properties of new methods using mathematical and computer tools&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;students-with-special-needs&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Students with Special Needs&lt;/h1&gt;
+&lt;p&gt;Brown University is committed to full inclusion of all students. Students who, by nature of a documented disability, require academic accommodations should contact the professor during office hours. Students may also speak with Student and Employee Accessibility Services at 401-863-9588 to discuss the process for requesting accommodations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;diversity-statement&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Diversity Statement&lt;/h1&gt;
+&lt;p&gt;This course is designed to support an inclusive learning environment where diverse perspectives are recognized, respected and seen as a source of strength. It is our intent to provide materials and activities that are respectful of various levels of diversity: mathematical background, previous computing skills, gender, sexuality, disability, age, socioeconomic status, ethnicity, race, and culture.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;english-language-learners&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;English Language Learners&lt;/h1&gt;
+&lt;p&gt;Brown University welcomes students from around the world, and the unique perspectives international students bring enrich the campus community. To empower students whose first language is not English, an array of ELL support is available on campus including language and culture workshops and individual appointments. For more information about English Language Learning at Brown, contact the ELL Specialists at &lt;a href=&#34;mailto:ellwriting@brown.edu&#34;&gt;ellwriting@brown.edu&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
