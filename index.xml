@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stats Education on Stats Education</title>
-    <link>http://www.statseducation.com/index.xml</link>
+    <link>/index.xml</link>
     <description>Recent content in Stats Education on Stats Education</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Introduction to R</title>
-      <link>http://www.statseducation.com/project/r/</link>
+      <link>/project/r/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.statseducation.com/project/r/</guid>
+      <guid>/project/r/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
@@ -29,13 +29,34 @@
     </item>
     
     <item>
-      <title>About</title>
-      <link>http://www.statseducation.com/about/</link>
+      <title></title>
+      <link>/publication/2013-02-01-SP-EOL-NP/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.statseducation.com/about/</guid>
+      <guid>/publication/2013-02-01-SP-EOL-NP/</guid>
+      <description>&lt;!-- BLOGDOWN-HEAD --&gt;
+
+
+
+&lt;!-- /BLOGDOWN-HEAD --&gt;
+
+&lt;!-- BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;+++ abstract = &amp;quot; &lt;strong&gt;PURPOSE&lt;/strong&gt;: To determine factors contributing to the infrequent provision of spiritual care (SC) by nurses and physicians caring for patients at the end of life (EOL). &lt;strong&gt;PATIENTS AND METHODS&lt;/strong&gt;: This is a survey-based, multisite study conducted from March 2006 through January 2009. All eligible patients with advanced cancer receiving palliative radiation therapy and oncology physician and nurses at four Boston academic centers were approached for study participation; 75 patients (response rate = 73%) and 339 nurses and physicians (response rate = 63%) participated. The survey assessed practical and operational dimensions of SC, including eight SC examples. Outcomes assessed five factors hypothesized to contribute to SC infrequency. &lt;strong&gt;RESULTS&lt;/strong&gt;: Most patients with advanced cancer had never received any form of spiritual care from their oncology nurses or physicians (87% and 94%, respectively; P for difference = .043). Majorities of patients indicated that SC is an important component of cancer care from nurses and physicians (86% and 87%, respectively; P = .1). Most nurses and physicians thought that SC should at least occasionally be provided (87% and 80%, respectively; P = .16). Majorities of patients, nurses, and physicians endorsed the appropriateness of eight examples of SC (averages, 78%, 93%, and 87%, respectively; P = .01). In adjusted analyses, the strongest predictor of SC provision by nurses and physicians was reception of SC training (odds ratio [OR] = 11.20, 95% CI, 1.24 to 101; and OR = 7.22, 95% CI, 1.91 to 27.30, respectively). Most nurses and physicians had not received SC training (88% and 86%, respectively; P = .83). &lt;strong&gt;CONCLUSION&lt;/strong&gt;: Patients, nurses, and physicians view SC as an important, appropriate, and beneficial component of EOL care. SC infrequency may be primarily due to lack of training, suggesting that SC training is critical to meeting national EOL care guidelines.&amp;quot; authors = [“Balboni, MJ”, “Sullivan, AJ”, “Amobi, A”, “Phelps, AC”, “Gorman, DP”, “Zolfrank, A”, “Peteet, JR”, “Prigerson, HG”, “Vanderweele, TJ”, “Balboni, TA”] date = “2013-02-01” image_preview = “” math = true publication_types = [“2”] publication = “Journal of Clinical Oncology” publication_short = “JCO” selected = true title = “Why is spiritual care infrequent at the end of life? Spiritual care perceptions among patients, nurses, and physicians and the role of training.” url_code = “#” url_dataset = “#” url_pdf = “&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4878036/&#34; class=&#34;uri&#34;&gt;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4878036/&lt;/a&gt;” url_project = “#” url_slides = “#” url_video = “#”&lt;/p&gt;
+&lt;p&gt;+++&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
       <description>&lt;p&gt;&lt;center&gt;
-&lt;img src=&#34;http://www.statseducation.com/img/Sullivan_4.jpg&#34; alt=&#34;Adam&#34; align=&#34;right&#34; style=&#34;width: 60%; height: 60%; margin:8px&#34;&gt;
+&lt;img src=&#34;/img/Sullivan_4.jpg&#34; alt=&#34;Adam&#34; align=&#34;right&#34; style=&#34;width: 60%; height: 60%; margin:8px&#34;&gt;
 &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;Welcome to Stats Education! My name is Adam Sullivan and I am an Assistant Professor of Biostatistics programs at &lt;a href=&#34;https://www.brown.edu/academics/public-health/biostatistics/&#34; target=&#34;_blank&#34;&gt;Brown University&lt;/a&gt;.&lt;/p&gt;
@@ -45,7 +66,7 @@
 &lt;p&gt;I have a passion for teaching and mentoring students. This passion started when I was an undergraduate student and started tutoring and grading homework. I now have been involved in education for over 16 years and have been teaching in some capacity for 15 of those years.&lt;/p&gt;
 
 &lt;p&gt;&lt;center&gt;
-&lt;img src=&#34;http://www.statseducation.com/img/bandOne.png&#34; alt=&#34;Adam&#34; align=&#34;left&#34; style=&#34;width: 60%; height: 60%; margin:8px&#34;&gt;
+&lt;img src=&#34;/img/bandOne.png&#34; alt=&#34;Adam&#34; align=&#34;left&#34; style=&#34;width: 60%; height: 60%; margin:8px&#34;&gt;
 &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;I earned a BA in Mathematics and Secondary Education from &lt;a href=&#34;http://www.houghton.edu/&#34; target=&#34;_blank&#34;&gt;Houghton College&lt;/a&gt; in 2003. I taught high school math in New York for 3.5 years following this before earning a MS in Mathematics from &lt;a href=&#34;http://www.sdstate.edu/&#34; target=&#34;_blank&#34;&gt;South Dakota State University&lt;/a&gt;. I finished up my academic years at &lt;a href=&#34;http://www.harvard.edu/&#34; target=&#34;_blank&#34;&gt;Harvard University&lt;/a&gt; where I earned a PhD in Biostatistics in 2015. During this time I have taught high school math from Algebra to AP Calculus, College Algebra, Undergraduate Introductory Statistics and my current courses at Brown University.&lt;/p&gt;
