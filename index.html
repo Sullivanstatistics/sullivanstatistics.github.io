@@ -1,496 +1,226 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adam J. Sullivan</title>
+<meta name="description" content="Adam J. Sullivan, PhD: biostatistician, author of the R packages ballast and mirrorslope.">
+<meta property="og:title" content="Adam J. Sullivan, PhD">
+<meta property="og:description" content="Biostatistician. Senior Director, Head of Biostatistics, Capricor Therapeutics.">
+<meta property="og:image" content="https://sullivanstatistics.github.io/img/adam-lexie-midnight.jpg">
+<style>
+  :root {
+    --bg: #fbfbf9; --fg: #1b1d22; --muted: #5d6370; --rule: #e3e4e0; --accent: #2f5a3a; --card: #ffffff; --chip: #eef1ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #15171b; --fg: #e8e9ec; --muted: #a2a8b4; --rule: #2a2d33; --accent: #9cc9a6; --card: #1c1f24; --chip: #232a25; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1rem 3rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.18.1" />
-  <meta name="author" content="Adam J Sullivan">
-  <meta name="description" content="Assistant Professor of Biostatistics">
+  .hero { text-align: center; margin-bottom: 2.5rem; }
+  .hero figure { margin: 0 auto 1.25rem; max-width: 26rem; }
+  .hero img { width: 100%; height: auto; display: block; border-radius: 14px; box-shadow: 0 6px 24px rgba(0,0,0,.18); }
+  .hero figcaption { color: var(--muted); font-size: .9rem; margin-top: .6rem; }
+  h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 .3rem; letter-spacing: -.01em; }
+  .role { color: var(--muted); margin: 0; }
+  .quick { display: flex; flex-wrap: wrap; justify-content: center; gap: .4rem 1.2rem; margin-top: .9rem; font-size: .95rem; }
 
-  
-  
-  
-  
-    
-    
-    <link rel="stylesheet" href="/css/highlight.min.css">
-    
-  
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/academicons.min.css">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
-  <link rel="stylesheet" href="/css/hugo-academic.css">
-  
-  <link rel="stylesheet" href="/css/custom.css">
-  
+  h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 2.75rem 0 1rem;
+       font-weight: 600; padding-bottom: .4rem; border-bottom: 1px solid var(--rule); }
+  .pkg { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 1rem 1.25rem; margin: 0 0 .9rem; }
+  .pkg h3 { margin: 0 0 .25rem; font-size: 1.1rem; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+  .pkg p { margin: 0 0 .5rem; }
+  .links { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; font-size: .95rem; }
 
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Stats Education">
-  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Stats Education">
+  .job { display: grid; grid-template-columns: 1fr auto; gap: 0 1rem; margin: 0 0 1rem; }
+  .job .org { font-weight: 600; }
+  .job .when { color: var(--muted); font-size: .9rem; white-space: nowrap; }
+  .job .what { grid-column: 1 / -1; color: var(--muted); }
+  @media (max-width: 30rem) { .job { grid-template-columns: 1fr; } }
 
-  <link rel="icon" type="image/png" href="/img/icon.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
-
-  <link rel="canonical" href="/">
-
-  
-
-  <title>Stats Education</title>
-
+  ul.plain { list-style: none; padding: 0; margin: 0; }
+  ul.plain li { margin: 0 0 .55rem; }
+  ol.pubs { padding-left: 1.4rem; margin: 0; }
+  ol.pubs li { margin: 0 0 .7rem; }
+  .venue { font-style: italic; }
+  .note { color: var(--muted); font-size: .95rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: .4rem; }
+  .chips span { background: var(--chip); border-radius: 999px; padding: .15rem .7rem; font-size: .9rem; }
+  details summary { cursor: pointer; color: var(--accent); margin: .5rem 0; }
+  footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .85rem; text-align: center; }
+</style>
 </head>
-<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
-
-<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
-  <div class="container">
-
-    
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target=".navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">Stats Education</a>
+<body>
+<main>
+  <header class="hero">
+    <figure>
+      <img src="img/adam-lexie-midnight.jpg" width="900" height="1096"
+           alt="Adam Sullivan sitting on a fallen log in the woods with his two German Shepherds, Lexie and Midnight">
+      <figcaption>With Lexie and Midnight</figcaption>
+    </figure>
+    <h1>Adam J. Sullivan, PhD</h1>
+    <p class="role">Senior Director, Head of Biostatistics, Capricor Therapeutics</p>
+    <div class="quick">
+      <a href="#software">Software</a>
+      <a href="#experience">Experience</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="https://orcid.org/0000-0002-9429-3611">ORCID</a>
+      <a href="https://github.com/Sullivanstatistics">GitHub</a>
     </div>
+  </header>
 
-    
-    <div class="collapse navbar-collapse">
-
-      
-      <ul class="nav navbar-nav navbar-right">
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#intro" data-target="#intro">
-            
-            <span>Home</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#projects" data-target="#projects">
-            
-            <span>Courses</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#instruct" data-target="#instruct">
-            
-            <span>Creator</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#contact" data-target="#contact">
-            
-            <span>Contact</span>
-          </a>
-        </li>
-
-        
-        
-      </ul>
-
-    </div>
-  </div>
-</nav>
-
-
-
-<span id="homepage" style="display: none"></span>
-
-
-
-  
-  
-  <section id="intro" class="home-section">
-    <div class="container">
-      
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Stats Education</h1>
-    <p><strong>Your Source for Statistics Education!</strong></p>
-  </div>
-  <div class="col-xs-12 col-md-8">
-    <!--
-<div style="text-align: center;">
-<h1>Academic</h1>
-<h2 style="margin-top: 0;">Create a beautifully simple personal or academic website</h2>
-</div>
--->
-
-<div style="height: 5px;"></div>
-
-<div class="jumbotron" >
-<p><center>
-<h1>
-Welcome to Stats Education!
-</h1>
-</center></p>
-
-<p><br>
-<br></p>
-
-<p>This website is the creation of <a href="/about/">Adam J Sullivan, PhD</a>. This site will provide basic statistics education for free. Currently we have an <a href="http://www.statseducation.com/Introduction-to-R/" target="_blank">Introduction to R</a> course and will be adding a lot more courses in the future.</p>
-
-<p><br></p>
-
-<p>All of the education material here is free and the documents creating all of it are available through <a href="www.github.com/sullivanstatistics" target="_blank">Github</a>. All of the education Materials are also created or compiled by Brown University Department of Biostatistics Professors. Some of these materials are used in our courses as well.</p>
-
-<p><br></p>
-
-<p>If you would like to interact or communicate with us, please contact us:</p>
-
-<div class="contact-buttons" style="line-height:160%;margin-left:30px;margin-top:10px">
-<p>
-<a href="https://twitter.com/sullivanstats" target="_blank" style="color:#515151;"><i class="fa fa-twitter"></i> &nbsp; Twitter<br></a> 
-<a href="mailto:adam@sullivanstatistics.com" target="_blank" style="color:#515151;"><i class="fa fa-envelope" style="font-size:1em"></i> &nbsp; Email<br></a> 
-<a href="https://github.com/sullivanstatistics" target="_blank" style="color:#515151;"><i class="fa fa-github" style="font-size:1em"></i> &nbsp; GitHub<br></a> 
-<a href="https://www.linkedin.com/in/sullivanstats/" target="_blank" style="color:#515151;"><i class="fa fa-linkedin" style="font-size:1em"></i> &nbsp; LinkedIn<br></a>
-</p>
-</div>
-
-<p><br></p>
-
-<div style="text-align: center;">
-  <a class="btn btn-intro btn-sm" style="font-size: 1rem; margin-bottom: 0;" href="https://twitter.com/intent/tweet?text=I%27m%20learning%20from%20Stats%20Education%20with%20%20%40sullivanstats&url=https%3A%2F%2Fgoo.gl%2Fxr5Pok" target="_blank">Tweet About Us!</a>
-</div>
-
-</div>
-
-  </div>
-</div>
-
-    </div>
+  <section>
+    <p>I am a biostatistician working on clinical trials in rare disease. Before Capricor I worked in oncology and
+       real-world evidence at Servier Pharmaceuticals and at Takeda, and before industry I was on the biostatistics
+       faculty of the Brown University School of Public Health, where I directed the master's programs in
+       biostatistics. I trained at Harvard, where my doctoral work was on sensitivity analysis for causal inference.</p>
+    <p>I write software that makes trial analyses easier to check and to show, and I have spent a good part of my
+       career teaching statistics, R and reproducible research.</p>
   </section>
 
-  
-  
-  <section id="projects" class="home-section">
-    <div class="container">
-      
-
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Courses</h1>
-    
-  </div>
-  <div class="col-xs-12 col-md-8">
-    
-
-    <div class="project-toolbar">
-      <div id="filters">
-        <div class="btn-toolbar">
-          <div class="btn-group">
-          
-            <a href="#" data-filter="*" class="btn btn-primary btn-large active">All</a>
-          
-            <a href="#" data-filter=".R" class="btn btn-primary btn-large">R</a>
-          
-            <a href="#" data-filter=".Julia" class="btn btn-primary btn-large">Julia</a>
-          
-            <a href="#" data-filter=".stats" class="btn btn-primary btn-large">Basic Stats</a>
-          
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
-
-    <div id="container-projects" class="row isotope">
-
-      
-      
-      
-      
-      
-      
-      
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item R">
-        <div class="card">
-          
-          <a href="/Introduction-to-R/" title="" class="card-image hover-overlay"
-             target="_blank">
-            <img src="/img/box-icon.png" alt="" class="img-responsive">
-          </a>
-          
-          <div class="card-text">
-            <h4><a href="/Introduction-to-R/" target="_blank">Introduction to R</a></h4>
-            <div class="card-desription">
-              <p>This course is designed to take a non-R user and turn them into a proficient novice R user</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-
-    </div>
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  <section id="instruct" class="home-section">
-    <div class="container">
-      
-
-
-
-<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <div class="col-xs-12 col-md-4">
-    <div id="profile">
-
-      
-      <div class="portrait" itemprop="image"
-           style="background-image: url('/img/Sullivan_4.jpg');">
-      </div>
-      
-
-      <div class="portrait-title">
-        <h2 itemprop="name">Adam J Sullivan</h2>
-        <h3 itemprop="jobTitle">Assistant Professor of Biostatistics</h3>
-        
-        <h3 itemprop="worksFor">
-          <a href="https://www.brown.edu/academics/public-health/biostatistics/" target="_blank">
-          Brown University
-          </a>
-        </h3>
-        
-      </div>
-
-      <ul class="social-icon" aria-hidden="true">
-        
-        
-        <li>
-          <a href="mailto:adam_sullivan@brown.edu" target="_blank">
-            <i class="fa fa-envelope big-icon"></i>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a href="//twitter.com/sullivanstats" target="_blank">
-            <i class="fa fa-twitter big-icon"></i>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a href="//github.com/sullivanstatistics" target="_blank">
-            <i class="fa fa-github big-icon"></i>
-          </a>
-        </li>
-        
-      </ul>
-
+  <h2 id="software">Software</h2>
+  <div class="pkg">
+    <h3>ballast</h3>
+    <p>Stress-tests a pre-specified mixed model for repeated measures: refits it under families of data and
+       analytic perturbations and judges every refit against the pre-specified estimate, confidence interval and p-value.</p>
+    <div class="links">
+      <a href="https://CRAN.R-project.org/package=ballast">CRAN</a>
+      <a href="/ballast/">Documentation</a>
+      <a href="https://github.com/Sullivanstatistics/ballast">GitHub</a>
     </div>
   </div>
-  <div class="col-xs-12 col-md-8" itemprop="description">
-
-    
-
-<h1 id="about-the-creator">About the Creator</h1>
-
-<p>Adam J Sullivan is an Assistant Professor of Biostatistics at Brown University. His interests include flipped/blended learning, online learning, open education, R programming and Statistics Education. He is currently director of the <a href="https://www.brown.edu/academics/public-health/biostatistics/" target="_blank">Masters program</a> in biostatistics at Brown University and the faculty statistician at the <a href="https://www.brown.edu/initiatives/child-health/" target="_blank">Hassenfeld Child Health Innovation Institute</a>.</p>
-
-<p>For more information click <a href="/about/">here</a></p>
-
-
-    <div class="row">
-
-      
-      <div class="col-sm-5">
-        <h3>Interests</h3>
-        <ul class="ul-interests">
-          
-          <li>Statistics Education</li>
-          
-          <li>R Programming</li>
-          
-          <li>Causal Inference</li>
-          
-        </ul>
-      </div>
-      
-
-      
-      <div class="col-sm-7">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">PhD in Biostatistics, 2015</p>
-              <p class="institution">Harvard University</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">MS in South Dakota State University, 2010</p>
-              <p class="institution">South Dakota State University</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">BA in Mathematics and Adolescent Education, 2003</p>
-              <p class="institution">Houghton College</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      
-
+  <div class="pkg">
+    <h3>mirrorslope</h3>
+    <p>Mirror slope plots for two-arm clinical trial data.</p>
+    <div class="links">
+      <a href="https://CRAN.R-project.org/package=mirrorslope">CRAN</a>
+      <a href="https://github.com/Sullivanstatistics/mirrorslope">GitHub</a>
     </div>
   </div>
-</div>
 
-    </div>
-  </section>
+  <h2 id="experience">Experience</h2>
+  <div class="job"><span class="org">Capricor Therapeutics</span><span class="when">2026 to present</span>
+    <span class="what">Senior Director, Head of Biostatistics (from October 2026); Director of Biostatistics</span></div>
+  <div class="job"><span class="org">Servier Pharmaceuticals</span><span class="when">2021 to 2026</span>
+    <span class="what">Associate Director, Biostatistics; Senior Principal Biostatistician</span></div>
+  <div class="job"><span class="org">Takeda Pharmaceuticals</span><span class="when">2020 to 2021</span>
+    <span class="what">Senior Manager</span></div>
+  <div class="job"><span class="org">Brown University School of Public Health</span><span class="when">2015 to 2020</span>
+    <span class="what">Director, Biostatistics Master's Programs; Assistant Professor of Biostatistics; Adjunct Professor of Biostatistics.
+      Faculty Statistician, Hassenfeld Child Health Innovation Institute (2016 to 2020)</span></div>
+  <div class="job"><span class="org">Harvard University</span><span class="when">2010 to 2015</span>
+    <span class="what">Statistical Researcher, Initiative on Health, Religion, and Spirituality</span></div>
 
-  
-  
-  <section id="contact" class="home-section">
-    <div class="container">
-      
+  <h2>Education</h2>
+  <ul class="plain">
+    <li><strong>PhD, Biostatistics</strong>, Harvard University, 2015</li>
+    <li><strong>MA, Biostatistics</strong>, Harvard University, 2012</li>
+    <li><strong>MSc, Mathematics</strong>, South Dakota State University, 2010</li>
+    <li><strong>BSc, Mathematics and Adolescent Education</strong>, Houghton College, 2003</li>
+  </ul>
 
-
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Contact</h1>
-    
+  <h2>Areas of work</h2>
+  <div class="chips">
+    <span>Clinical trials</span><span>Rare disease</span><span>Real-world evidence</span><span>Time-to-event data</span>
+    <span>Causal inference</span><span>Sensitivity analysis</span><span>Hierarchical models</span><span>Predictive modelling</span>
+    <span>Score creation and validation</span><span>Data visualisation</span><span>Statistical programming</span>
+    <span>Teaching and mentoring</span>
   </div>
-  <div class="col-xs-12 col-md-8">
-    
 
-    <ul class="fa-ul">
+  <h2 id="publications">Selected publications</h2>
+  <ol class="pubs">
+    <li>Kalloo G, Wellenius GA, McCandless L, Calafat AM, Sjodin A, Sullivan AJ, Romano ME, Karagas MR, Chen A, Yolton K, Lanphear BP, Braun JM.
+        Chemical mixture exposures during pregnancy and cognitive abilities in school-aged children. <span class="venue">Environmental Research</span>, 2021.</li>
+    <li>Ziobrowski HN, Buka SL, Austin SB, Duncan AE, Sullivan AJ, Horton NJ, Simone M, Field AE.
+        Child and adolescent maltreatment patterns and risk of eating disorder behaviors developing in young adulthood. <span class="venue">Child Abuse &amp; Neglect</span>, 2021.</li>
+    <li>Ziobrowski HN, Buka SL, Austin SB, Sullivan AJ, Horton NJ, Simone M, Field AE.
+        Using latent class analysis to empirically classify maltreatment according to the developmental timing, duration, and co-occurrence of abuse types. <span class="venue">Child Abuse &amp; Neglect</span>, 2020.</li>
+    <li>Beckman MD, &Ccedil;etinkaya-Rundel M, Horton NJ, Rundel CW, Sullivan AJ, Tackett M.
+        Implementing version control with Git and GitHub as a learning objective in statistics and data science courses. <span class="venue">Journal of Statistics Education</span>, 2020.</li>
+    <li>Gjelsvik A, Rogers ML, Garro A, Sullivan A, Koinis-Mitchell D, McQuaid EL, Smego R, Vivier PM.
+        Neighborhood risk and hospital use for pediatric asthma, Rhode Island, 2005&ndash;2014. <span class="venue">Preventing Chronic Disease</span>, 2019.</li>
+    <li>Werner EF, Has P, Kanno L, Sullivan A, Clark MA.
+        Barriers to postpartum glucose testing in women with gestational diabetes mellitus. <span class="venue">American Journal of Perinatology</span>, 2018.</li>
+    <li>Balboni MJ, Sullivan AJ, Smith PT, Zaidi D, Mitchell C, Tulsky JA, Sulmasy D, VanderWeele TJ, Balboni TA.
+        The views of clergy regarding ethical controversies in care at the end of life. <span class="venue">Journal of Pain and Symptom Management</span>, 2017.</li>
+    <li>Balboni M, Sullivan AJ, Enzinger A, Smith P, Mitchell C, Peteet J, Tulsky J, VanderWeele TJ, Balboni TA.
+        U.S. clergy religious values and relationships to end-of-life discussions and care. <span class="venue">Journal of Pain and Symptom Management</span>, 2017.</li>
+    <li>Epstein-Peterson ZD, Sullivan AJ, Krishnan M, Chen J, Ferrone M, Baldini E, Balboni TA.
+        Postoperative radiation therapy for osseous metastasis: outcomes and predictors of local failure. <span class="venue">Practical Radiation Oncology</span>, 2015.</li>
+    <li>Epstein-Peterson ZD, Sullivan AJ, Enzinger AC, Trevino KM, Zollfrank AA, Balboni MJ, VanderWeele TJ, Balboni TA.
+        Examining forms of spiritual care provided in the advanced cancer setting. <span class="venue">American Journal of Hospice and Palliative Medicine</span>, 2014.</li>
+    <li>Balboni MJ, Sullivan A, Enzinger AC, Epstein-Peterson Z, Tseng Y, Mitchell C, Niska BA, Zollfrank A, VanderWeele TJ, Balboni TA.
+        Nurse and physician barriers to spiritual care provision at the end of life. <span class="venue">Journal of Pain and Symptom Management</span>, 2014.</li>
+    <li>Tseng YD, Krishnan MS, Sullivan AJ, Jones JA, Chow E, Balboni TA.
+        How radiation oncologists evaluate and incorporate life expectancy estimates into the treatment of palliative cancer patients: a survey-based study.
+        <span class="venue">International Journal of Radiation Oncology, Biology, Physics</span>, 2013.</li>
+    <li>Tseng YD, Krishnan MS, Jones JA, Sullivan AJ, Gorman D, Taylor A, Pacold M, Kalinowski B, Mamon HJ, Abrahm J, Balboni TA.
+        Supportive and palliative radiation oncology service: impact of a dedicated service on palliative cancer care. <span class="venue">Practical Radiation Oncology</span>, 2013.</li>
+    <li>Balboni MJ, Sullivan A, Amobi A, Phelps AC, Gorman D, Zollfrank A, Peteet JR, Prigerson HG, VanderWeele TJ, Balboni TA.
+        Why is spiritual care infrequent at the end of life? Spiritual care perceptions among patients, nurses, and physicians and the role of training.
+        <span class="venue">Journal of Clinical Oncology</span>, 2013.</li>
+  </ol>
+  <p class="note">Since 2022 I have also co-authored oncology abstracts presented at ESMO and ESMO Gastrointestinal Oncology and published in <span class="venue">Annals of Oncology</span>,
+     among them the real-world PROMETCO cohort in metastatic colorectal cancer and the phase IIIb ProvIDHe study of ivosidenib in IDH1-mutated cholangiocarcinoma.</p>
 
-      
-      <li>
-        <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
-        <span><a href="mailto:adam_sullivan@brown.edu">adam_sullivan@brown.edu</a></span>
-      </li>
-      
+  <h2>Books</h2>
+  <ul class="plain">
+    <li>Leonard KL, Sullivan AJ. <span class="venue">Biostatistics for Oncologists</span>. Springer Publishing Company, 2018.</li>
+    <li>Sullivan AJ. <span class="venue">R Companion for Statistics for Social Science</span>. Top Hat Monocle, 2018.</li>
+    <li>Hayward S, Bailey SL, Hauselt J, Kampen K, Neely ML, Carroll D, Sullivan AJ, Cullum AJ. <span class="venue">Statistics for Social Science: A Top Hat Interactive Text</span>. Top Hat Monocle, 2016.</li>
+  </ul>
 
-      
+  <h2 id="teaching">Teaching</h2>
+  <ul class="plain">
+    <li><a href="/Introduction-to-R/">Introduction to R</a>, a free course for people new to R (2016)</li>
+    <li>EvSynth Academy, a seven-module online course in evidence synthesis, with Christopher Schmid and colleagues at Brown (2017&ndash;2018)</li>
+    <li>Short courses: Introduction to R programming for biostatistics, NAMBARI workshop, AMPATH and Moi University School of Medicine,
+        Eldoret, Kenya (2017); Introduction to the tidyverse, South Dakota State University Data Science Symposium (2019)</li>
+  </ul>
+  <p class="note" style="margin-top:1rem">Awards: Dean&rsquo;s Award for Excellence in Teaching, Brown University (2018); Sheridan Junior Faculty
+     Teaching Fellow, Brown University (2017&ndash;2018); Teaching with Technology Showcase Award, Brown University (2017);
+     Dean&rsquo;s Award for Excellence in Classroom Instruction, Brown University School of Public Health (2016).</p>
 
-      
-      <li>
-        <i class="fa-li fa fa-phone fa-2x" aria-hidden="true"></i>
-        <span><a href="tel:401%20463%201980">401 463 1980</a></span>
-      </li>
-      
+  <h2>Selected talks</h2>
+  <ul class="plain">
+    <li>Helping students develop data workflows and reproducible research. Royal Statistical Society International Conference, Belfast, 2019.</li>
+    <li>Implementing reproducible research in statistics courses using Git and GitHub. United States Conference on Teaching Statistics, 2019.</li>
+    <li>Translating an area-based socio-economic risk index into clinical practice. CityMatCH Conference, Providence, 2019.</li>
+    <li>Modern tools for reproducible research. South Dakota State University Data Science Symposium, 2019.</li>
+    <li>Statistics and the emerging discipline of data science. United States Conference on Teaching Statistics, 2017.</li>
+    <li>The results of blended instruction in quantitative methods in public health: a pilot study. Joint Statistical Meetings, Chicago, 2016.</li>
+    <li>Sensitivity analysis for linear structural equation models. College of William &amp; Mary and Clarkson University, 2015.</li>
+  </ul>
 
-      
+  <h2>Grants</h2>
+  <ul class="plain">
+    <li>Co-PI: Translating an area-based socio-economic deprivation index into clinical practice. RI Advance-CTR, 2018&ndash;2019.</li>
+    <li>Co-Investigator: Innovative training to improve CER/PCOR systematic review production and uptake. AHRQ R25 HS23299, 2014&ndash;2019.</li>
+    <li>Co-Investigator: Rhode Island Center for Clinical and Translational Science. NIGMS U54 GM115677, 2016&ndash;2021.</li>
+    <li>Co-Investigator: Training and teaching for transforming big data knowledge. NIMH R25 MH116440, 2016&ndash;2021.</li>
+  </ul>
 
-      
+  <h2>Affiliations</h2>
+  <ul class="plain">
+    <li>American Statistical Association, member since 2015</li>
+    <li>Irish Statistical Association, member since 2017</li>
+    <li>Society for Pediatric Research, member since 2018</li>
+    <li>External IRB board member, Johnson &amp; Wales University, since 2018</li>
+  </ul>
 
-      
-      <li>
-        <i class="fa-li fa fa-map-marker fa-2x" aria-hidden="true"></i>
-        <span>121 South Main Street, Providence, RI 02903</span>
-      </li>
-      
-
-      
-
-    </ul>
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-
-
-<footer class="site-footer">
-  <div class="container">
-    <p class="powered-by">
-
-      &copy; 2017 Stats Education &middot; 
-
-      Powered by <a href="https://github.com/sullivanstatistics" target="_blank">Sullivan Statistics</a> for <a href="https://www.brown.edu/academics/public-health/" target="_blank">Brown School of Public Health</a>.
-
-      <span class="pull-right" aria-hidden="true">
-        <a href="#" id="back_to_top">
-          <span class="button_icon">
-            <i class="fa fa-chevron-up fa-2x"></i>
-          </span>
-        </a>
-      </span>
-
-    </p>
-  </div>
-</footer>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
-    <script src="/js/jquery-1.12.3.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/isotope.pkgd.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
-    <script src="/js/hugo-academic.js"></script>
-    
-
-    
-
-    
-    
-      
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-
-      
-
-      
-
-      <script>hljs.initHighlightingOnLoad();</script>
-    
-
-    
-    
-
-  </body>
+  <footer>
+    <a href="https://orcid.org/0000-0002-9429-3611">ORCID 0000-0002-9429-3611</a> &middot;
+    <a href="https://github.com/Sullivanstatistics">GitHub</a><br>
+    Adam J. Sullivan, 2026
+  </footer>
+</main>
+</body>
 </html>
-
